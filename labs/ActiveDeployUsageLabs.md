@@ -13,6 +13,14 @@ These lab steps will walk you through a full set of usage scenarios for Active D
 * Prerequisites
 * Sample Application
 
+**Labs**
+Lab Topic | Dashboard UI | Command Line
+--------- | ------------ | ------------
+Basic Deployment | [UI]https://github.com/IBM-Bluemix/active-deploy/tree/master/labs/ActiveDeployUsageLabs-Lab1-cli.md | CLI
+Custom Deployment | UI | CLI
+Manual Progression | UI | CLI
+Rollback a Deployment | UI | CLI
+
 **Active Deploy Dashboard Labs**
 * Lab 1 - [Basic Deployment](https://github.com/IBM-Bluemix/active-deploy/tree/master/labs/ActiveDeployUsageLabs-Lab1-cli.md)
 * Lab 2 - Custom Deployment
