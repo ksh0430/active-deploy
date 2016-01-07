@@ -2,7 +2,9 @@
 
 # Lab 1: Default Deployment with the CLI
 > **Difficulty**: Easy
+
 > **Time**: 15 minutes
+
 > **Prerequisites**:
 - Make sure you have satisfied the prerequisite steps listed on the main lab page
 - Make sure you have a running application in Bluemix. If need be, use the SampleApp steps on the main lab page.
