@@ -2,7 +2,7 @@
 
 # Lab 1: Default Deployment with the CLI
 
-This lab will show us how to get started using Active Deploy quickly by doing an automated deployment using a default configuration.
+**Intent:** This lab will show us how to get started using Active Deploy quickly by doing an automated deployment using a default configuration.
 
 > **Difficulty**: Easy
 
