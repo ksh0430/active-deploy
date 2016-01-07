@@ -13,6 +13,18 @@ These lab steps will walk you through a full set of usage scenarios for Active D
 * Prerequisites
 * Sample Application
 
+dog | bird | cat
+----|------|----
+foo | foo  | foo
+bar | bar  | bar
+baz | baz  | baz
+
+dog | bird | cat
+:-- | :--: | --:
+foo | foo  | foo
+bar | bar  | bar
+baz | baz  | baz
+
 **Labs**
 Lab Topic | Dashboard UI | Command Line
 --------- | ------------ | ------------
