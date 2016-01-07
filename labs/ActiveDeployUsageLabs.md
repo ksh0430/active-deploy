@@ -52,4 +52,9 @@ These lab steps will walk you through a full set of usage scenarios for Active D
 
 After completing these labs, you have touched most parts of the Active Deploy service functionality. For additional references and resources, please see these links:
 
-* LINK 1
+See the announcement blog for Active Deploy [here](https://developer.ibm.com/bluemix/2015/10/09/bluemix-zero-downtime-deployment)
+Documentation => [here] (https://www.stage1.ng.bluemix.net/docs/services/ActiveDeploy/index.htmlb0 - has lots of good intro stuff, overview - command reference - very fast read to skim, good referenceb
+View an overview of the service [here](https://developer.ibm.com/tv/videos/cloud-foundation-services-demonstration/?cm_mmc=dw-_-trs-_-social-_-generic)
+Video of the CLI working [here](https://www.youtube.com/watch?v=LmsZ4-Mj_pU&feature=youtu.be)
+Support => [StackOverflow](http://stackoverflow.com/questions/tagged/bluemix - make sure you mention "Active Deploy" in your post - we monitor this continually)
+

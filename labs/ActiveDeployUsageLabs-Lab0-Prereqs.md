@@ -1,8 +1,10 @@
-[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/IBM-Bluemix/active-deploy-lab)
+[//]: # ([![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/IBM-Bluemix/active-deploy-lab))
 
 # Prerequisites
 
-A few steps to get started - done only once and depend on your desktop type. Skip any steps you have already accomplished.
+**Intent:** A few steps to get started - done only once and depend on your desktop type. Skip any steps you have already accomplished.
+
+##Steps
 
 1. Create a Bluemix log in
     * [bluemix.net](http://bluemix.net) - sign up is free and immediate

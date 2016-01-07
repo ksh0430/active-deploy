@@ -1,8 +1,12 @@
-[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/IBM-Bluemix/active-deploy-lab)
+[//]: # ([![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/IBM-Bluemix/active-deploy-lab))
+
+[//]: # (Deal with containers here eventually)
 
 # Create an Application in Bluemix
 
-This exercise will show us how to clone a repository, push a sample application to Bluemix, and how to re-deploy our application as a new version once we've made changes to it.
+**Intent:** If you need a sample application to work with, will show us how to clone a repository, push a sample application to Bluemix, and how to re-deploy our application as a new version once we've made changes to it.
+
+##Steps
 
 1. Use `git` to clone the repository hosting the sample application. Run the following command in your terminal/command prompt (or the Git command line on Windows):
 
