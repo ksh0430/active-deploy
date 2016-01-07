@@ -1,6 +1,14 @@
 [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/IBM-Bluemix/active-deploy-lab)
 
 
+> **Difficulty**: Easy
+
+> **Time**: 15 minutes
+
+> **Prerequisites**:
+Make sure you have satisfied the prerequisite steps listed on the main lab page
+Make sure you have a running application in Bluemix. If need be, use the SampleApp steps on the main lab page.
+
 # Lab 1: Default Deployment with the CLI
 
 This lab will show us how to get started using Active Deploy quickly by doing an automated deployment using a default configuration.
