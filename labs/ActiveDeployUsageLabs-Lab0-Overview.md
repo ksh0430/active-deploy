@@ -16,9 +16,7 @@ The Active Deploy service provides fully controlled and customized application u
 
 ##Operational Overview
  
-![Operational Overview](https://github.com/IBM-Bluemix/active-deploy/tree/master/labs/operational-overview-image1.png)
 ![Operational Overview](operational-overview-image1.png)
-
 
 Operationally there are 4 essential stages
 
