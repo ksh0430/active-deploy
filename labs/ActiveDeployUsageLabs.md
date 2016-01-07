@@ -22,7 +22,7 @@ These lab steps will walk you through a full set of usage scenarios for Active D
     </tr>
     <tr>
       <td align="center">Basic Deployment</td>
-      <td align="center">[UI]https://github.com/IBM-Bluemix/active-deploy/tree/master/labs/ActiveDeployUsageLabs-Lab1-cli.md</td>
+      <td align="center"><a href="https://github.com/IBM-Bluemix/active-deploy/tree/master/labs/ActiveDeployUsageLabs-Lab1-cli.md">UI</a></td>
       <td align="center">CLI</td>
     </tr>
     <tr>
