@@ -16,49 +16,33 @@ These lab steps will walk you through a full set of usage scenarios for Active D
 <table>
   <tbody>
     <tr>
-      <th>Tables</th>
-      <th align="center">Are</th>
-      <th align="right">Cool</th>
+      <th align="center">Lab Topic</th>
+      <th align="center">Dashboard UI</th>
+      <th align="center">Command Line</th>
     </tr>
     <tr>
-      <td>col 3 is</td>
-      <td align="center">right-aligned</td>
-      <td align="right">$1600</td>
+      <td align="center">Basic Deployment</td>
+      <td align="center">[UI]https://github.com/IBM-Bluemix/active-deploy/tree/master/labs/ActiveDeployUsageLabs-Lab1-cli.md</td>
+      <td align="center">CLI</td>
     </tr>
     <tr>
-      <td>col 2 is</td>
-      <td align="center">centered</td>
-      <td align="right">$12</td>
+      <td align="center">Custom Deployment</td>
+      <td align="center">UI</td>
+      <td align="center">CLI</td>
     </tr>
     <tr>
-      <td>zebra stripes</td>
-      <td align="center">are neat</td>
-      <td align="right">$1</td>
+      <td align="center">Manual Progression</td>
+      <td align="center">UI</td>
+      <td align="center">CLI</td>
     </tr>
     <tr>
-      <td>
-        <ul>
-          <li>item1</li>
-          <li>item2</li>
-        </ul>
-      </td>
-      <td align="center">See the list</td>
-      <td align="right">from the first column</td>
+      <td align="center">Rollback a Deployment</td>
+      <td align="center">UI</td>
+      <td align="center">CLI</td>
     </tr>
   </tbody>
 </table>
 
-dog | bird | cat
-----|------|----
-foo | foo  | foo
-bar | bar  | bar
-baz | baz  | baz
-
-dog | bird | cat
-:-- | :--: | --:
-foo | foo  | foo
-bar | bar  | bar
-baz | baz  | baz
 
 **Labs**
 Lab Topic | Dashboard UI | Command Line
