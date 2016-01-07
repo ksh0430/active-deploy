@@ -8,12 +8,12 @@ These lab steps will walk you through a full set of usage scenarios for Active D
 **Notes**
 * The labs work for both Cloud Foundry Applications and Container "compute instances". If there are specific instructions they will be labeled "CONTAINERS:" or "CFAPPS:"
 
-**Before you Start**
+##Before you Start
 * Active Deploy Overview and Concepts
 * Prerequisites
 * Sample Application
 
-**Labs**
+##Labs
 <table>
   <tbody>
     <tr>
@@ -22,33 +22,32 @@ These lab steps will walk you through a full set of usage scenarios for Active D
       <th align="center">Command Line</th>
     </tr>
     <tr>
-      <td align="center">Basic Deployment</td>
+      <td align="left">Basic Deployment</td>
       <td align="center"><a href="https://github.com/IBM-Bluemix/active-deploy/tree/master/labs/ActiveDeployUsageLabs-Lab1-gui.md">UI</a></td>
       <td align="center"><a href="https://github.com/IBM-Bluemix/active-deploy/tree/master/labs/ActiveDeployUsageLabs-Lab1-cli.md">CLI</a></td>
     </tr>
     <tr>
-      <td align="center">Custom Deployment</td>
+      <td align="left">Custom Deployment</td>
       <td align="center"><a href="https://github.com/IBM-Bluemix/active-deploy/tree/master/labs/ActiveDeployUsageLabs-Lab2-gui.md">UI</a></td>
       <td align="center"><a href="https://github.com/IBM-Bluemix/active-deploy/tree/master/labs/ActiveDeployUsageLabs-Lab2-cli.md">CLI</a></td>
     </tr>
     <tr>
-      <td align="center">Manual Progression</td>
+      <td align="left">Manual Progression</td>
       <td align="center"><a href="https://github.com/IBM-Bluemix/active-deploy/tree/master/labs/ActiveDeployUsageLabs-Lab3-gui.md">UI</a></td>
       <td align="center"><a href="https://github.com/IBM-Bluemix/active-deploy/tree/master/labs/ActiveDeployUsageLabs-Lab3-cli.md">CLI</a></td>
     </tr>
     <tr>
-      <td align="center">Rollback a Deployment</td>
+      <td align="left">Rollback a Deployment</td>
       <td align="center"><a href="https://github.com/IBM-Bluemix/active-deploy/tree/master/labs/ActiveDeployUsageLabs-Lab4-gui.md">UI</a></td>
       <td align="center"><a href="https://github.com/IBM-Bluemix/active-deploy/tree/master/labs/ActiveDeployUsageLabs-Lab4-cli.md">CLI</a></td>
     </tr>
   </tbody>
 </table>
 
-
 **Coming Soon**
 * Pipeline Integration
 
-**Next Steps**
+##Next Steps
 
 After completing these labs, you have touched most parts of the Active Deploy service functionality. For additional references and resources, please see these links:
 
