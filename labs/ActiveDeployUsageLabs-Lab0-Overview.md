@@ -16,6 +16,7 @@ The Active Deploy service provides fully controlled and customized application u
 
 ##Operational Overview
  
+![Operational Overview](operational-overview-image1.png)
 
 Operationally there are 4 essential stages
 
