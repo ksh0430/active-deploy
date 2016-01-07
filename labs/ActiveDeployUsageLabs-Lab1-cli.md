@@ -56,6 +56,7 @@ It requires the names of the current (routed) version of the application and the
     `cf delete -f hello_app_1`
 
 **After completing these steps, you have:**
+
 1. Created your first deployment using the Active Deploy service using the `cf active-deploy-create` command.
 2. Used a combination of the `cf active-deploy-list` and `cf apps` commands, your browser, and/or `curl` to see how the Active Deploy service completes a deployment.
 3. Used the `cf delete` command to delete the old version of the application once the deployment has completed.
