@@ -13,6 +13,7 @@ These lab steps will walk you through a full set of usage scenarios for Active D
 * Prerequisites
 * Sample Application
 
+**Labs**
 <table>
   <tbody>
     <tr>
@@ -22,47 +23,27 @@ These lab steps will walk you through a full set of usage scenarios for Active D
     </tr>
     <tr>
       <td align="center">Basic Deployment</td>
-      <td align="center"><a href="https://github.com/IBM-Bluemix/active-deploy/tree/master/labs/ActiveDeployUsageLabs-Lab1-cli.md">UI</a></td>
-      <td align="center">CLI</td>
+      <td align="center"><a href="https://github.com/IBM-Bluemix/active-deploy/tree/master/labs/ActiveDeployUsageLabs-Lab1-gui.md">UI</a></td>
+      <td align="center"><a href="https://github.com/IBM-Bluemix/active-deploy/tree/master/labs/ActiveDeployUsageLabs-Lab1-cli.md">CLI</a></td>
     </tr>
     <tr>
       <td align="center">Custom Deployment</td>
-      <td align="center">UI</td>
-      <td align="center">CLI</td>
+      <td align="center"><a href="https://github.com/IBM-Bluemix/active-deploy/tree/master/labs/ActiveDeployUsageLabs-Lab2-gui.md">UI</a></td>
+      <td align="center"><a href="https://github.com/IBM-Bluemix/active-deploy/tree/master/labs/ActiveDeployUsageLabs-Lab2-cli.md">CLI</a></td>
     </tr>
     <tr>
       <td align="center">Manual Progression</td>
-      <td align="center">UI</td>
-      <td align="center">CLI</td>
+      <td align="center"><a href="https://github.com/IBM-Bluemix/active-deploy/tree/master/labs/ActiveDeployUsageLabs-Lab3-gui.md">UI</a></td>
+      <td align="center"><a href="https://github.com/IBM-Bluemix/active-deploy/tree/master/labs/ActiveDeployUsageLabs-Lab3-cli.md">CLI</a></td>
     </tr>
     <tr>
       <td align="center">Rollback a Deployment</td>
-      <td align="center">UI</td>
-      <td align="center">CLI</td>
+      <td align="center"><a href="https://github.com/IBM-Bluemix/active-deploy/tree/master/labs/ActiveDeployUsageLabs-Lab4-gui.md">UI</a></td>
+      <td align="center"><a href="https://github.com/IBM-Bluemix/active-deploy/tree/master/labs/ActiveDeployUsageLabs-Lab4-cli.md">CLI</a></td>
     </tr>
   </tbody>
 </table>
 
-
-**Labs**
-Lab Topic | Dashboard UI | Command Line
---------- | ------------ | ------------
-Basic Deployment | [UI]https://github.com/IBM-Bluemix/active-deploy/tree/master/labs/ActiveDeployUsageLabs-Lab1-cli.md | CLI
-Custom Deployment | UI | CLI
-Manual Progression | UI | CLI
-Rollback a Deployment | UI | CLI
-
-**Active Deploy Dashboard Labs**
-* Lab 1 - [Basic Deployment](https://github.com/IBM-Bluemix/active-deploy/tree/master/labs/ActiveDeployUsageLabs-Lab1-cli.md)
-* Lab 2 - Custom Deployment
-* Lab 3 - Manual Progression Deployment
-* Lab 4 - Rollback a Deployment
-
-**Active Deploy CLI Labs**
-* Lab 1 - Basic Deployment
-* Lab 2 - Custom Deployment
-* Lab 3 - Manual Progression Deployment
-* Lab 4 - Rollback a Deployment
 
 **Coming Soon**
 * Pipeline Integration
