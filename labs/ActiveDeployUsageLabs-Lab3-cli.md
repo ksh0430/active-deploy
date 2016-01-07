@@ -1,8 +1,18 @@
-[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/IBM-Bluemix/active-deploy-lab)
+[//]: # ([![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/IBM-Bluemix/active-deploy-lab))
 
-# Lab 3: Manual Progression Deployment with the CLI
+# Lab 3: Manual Progression Deployment
 
-This lab explores the manual progression deployment, and how it differs from an automatic deployment.
+**Intent:** This lab explores the manual progression deployment, and how it differs from an automatic deployment.
+
+> **Difficulty**: Easy
+
+> **Time**: 15 minutes
+
+> **Prerequisites**:
+- Make sure you have satisfied the prerequisite steps listed on the main lab page
+- Make sure you have a running application in Bluemix. If need be, use the SampleApp steps on the main lab page.
+
+##Steps
 
 1. Make a change to the `index.txt` file in the sample application.
   * Change the text "Hello, Bluemix World **3**" to "Hello, Bluemix World **4**".

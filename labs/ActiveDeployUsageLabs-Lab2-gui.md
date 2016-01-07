@@ -1,8 +1,18 @@
-[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/IBM-Bluemix/active-deploy-lab)
+[//]: # ([![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/IBM-Bluemix/active-deploy-lab))
 
-# Lab 2: Custom Deployment with the Active Deploy Dashboard
+# Lab 2: Custom Deployment
 
-This lab will show us the customizability of Active Deploy by customizing the phase durations when creating our deployments.
+**Intent:** This lab will show us the customizability of Active Deploy by customizing the phase durations when creating our deployments.
+
+> **Difficulty**: Easy
+
+> **Time**: 15 minutes
+
+> **Prerequisites**:
+- Make sure you have satisfied the prerequisite steps listed on the main lab page
+- Make sure you have a running application in Bluemix. If need be, use the SampleApp steps on the main lab page.
+
+##Steps
 
 1. Make a change to the `index.txt` file in the sample application.
   * Change the text "Hello, Bluemix World **2**" to "Hello, Bluemix World **3**".

@@ -1,8 +1,18 @@
-[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/IBM-Bluemix/active-deploy-lab)
+[//]: # ([![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/IBM-Bluemix/active-deploy-lab))
 
-# Lab 4: Rollback a Deployment with the CLI
+# Lab 4: Rollback a Deployment
 
-This lab explores how to roll back a deployment after you have determined there is an issue with the new version of your application.
+**Intent:** This lab explores how to roll back a deployment after you have determined there is an issue with the new version of your application.
+
+> **Difficulty**: Easy
+
+> **Time**: 15 minutes
+
+> **Prerequisites**:
+- Make sure you have satisfied the prerequisite steps listed on the main lab page
+- Make sure you have a running application in Bluemix. If need be, use the SampleApp steps on the main lab page.
+
+##Steps
 
 1. Make a change to the `index.txt` file in the sample application.
   * Change the text "**Hello,** Bluemix World **4**" to "**TYPO in** Bluemix World **5**".
