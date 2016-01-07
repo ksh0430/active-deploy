@@ -10,9 +10,9 @@ These lab steps will walk you through a full set of usage scenarios for Active D
 * The labs work for both Cloud Foundry Applications and Container "compute instances". If there are specific instructions they will be labeled "CONTAINERS:" or "CFAPPS:"
 
 ##Before you Start
-* [Active Deploy Overview and Concepts]https://github.com/IBM-Bluemix/active-deploy/tree/master/labs/ActiveDeployUsageLabs-Lab0-Overview.md
-* [Prerequisites]https://github.com/IBM-Bluemix/active-deploy/tree/master/labs/ActiveDeployUsageLabs-Lab0-Prereqs.md
-* [Sample Application]https://github.com/IBM-Bluemix/active-deploy/tree/master/labs/ActiveDeployUsageLabs-Lab0-SampleApp.md (if you are not already using an application you've created)
+* [Active Deploy Overview and Concepts](https://github.com/IBM-Bluemix/active-deploy/tree/master/labs/ActiveDeployUsageLabs-Lab0-Overview.md)
+* [Prerequisites](https://github.com/IBM-Bluemix/active-deploy/tree/master/labs/ActiveDeployUsageLabs-Lab0-Prereqs.md)
+* [Sample Application](https://github.com/IBM-Bluemix/active-deploy/tree/master/labs/ActiveDeployUsageLabs-Lab0-SampleApp.md) (if you are not already using an application you've created)
 
 ##Labs
 <table>
