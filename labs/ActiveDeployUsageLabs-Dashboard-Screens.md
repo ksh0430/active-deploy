@@ -13,6 +13,7 @@ Overview of function
 1. Track status of current deployments
 2. Control deployments with major operations
 3. Access information about 
+&nbsp;
 
 ##Deployment Creation
 
@@ -27,6 +28,7 @@ Overview of function
 3. The type of deployment
 4. The transition phase settings
 5, Execute the deploy
+&nbsp;
 
 ##Deployment Control
 
