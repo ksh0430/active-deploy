@@ -12,6 +12,9 @@
 - Make sure you have satisfied the prerequisite steps listed on the main lab page
 - Make sure you have a running application in Bluemix. If need be, use the SampleApp steps on the main lab page.
 
+**Reference:**
+* You can see all the Dashboard screen references [here](https://github.com/IBM-Bluemix/active-deploy/tree/master/labs/ActiveDeployUsageLabs-Dashboard-Screens.md)
+
 ##Steps
 
 1. Make a change to the `index.txt` file in the sample application.
