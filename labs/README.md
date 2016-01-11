@@ -18,10 +18,10 @@ These labs will walk you through a full set of usage scenarios for Active Deploy
 ### 1. Getting Started with Active Deploy
 | Lab Topic | Bluemix Dashboard | Command Line |
 |-----------|:-----------------:|:------------:|
-|Basic Deployment|<a href="https://github.com/IBM-Bluemix/active-deploy/tree/master/labs/ActiveDeployUsageLabs-Lab1-gui.md">UI</a>|<a href="https://github.com/IBM-Bluemix/active-deploy/tree/master/labs/ActiveDeployUsageLabs-Lab1-cli.md">CLI</a>|
-|Custom Deployment|<a href="https://github.com/IBM-Bluemix/active-deploy/tree/master/labs/ActiveDeployUsageLabs-Lab2-gui.md">UI</a>|<a href="https://github.com/IBM-Bluemix/active-deploy/tree/master/labs/ActiveDeployUsageLabs-Lab2-cli.md">CLI</a>|
-|Manual Progression|<a href="https://github.com/IBM-Bluemix/active-deploy/tree/master/labs/ActiveDeployUsageLabs-Lab3-gui.md">UI</a>|<a href="https://github.com/IBM-Bluemix/active-deploy/tree/master/labs/ActiveDeployUsageLabs-Lab3-cli.md">CLI</a>|
-|Rollback Deployment|<a href="https://github.com/IBM-Bluemix/active-deploy/tree/master/labs/ActiveDeployUsageLabs-Lab4-gui.md">UI</a>|<a href="https://github.com/IBM-Bluemix/active-deploy/tree/master/labs/ActiveDeployUsageLabs-Lab4-cli.md">CLI</a>|
+|Basic Deployment|[Link](./GettingStartedWithActiveDeploy/BluemixDashboard/Lab1.md)|[Link](./GettingStartedWithActiveDeploy/CLI/Lab1.md)|
+|Custom Deployment|[Link](./GettingStartedWithActiveDeploy/BluemixDashboard/Lab2.md)|[Link](./GettingStartedWithActiveDeploy/CLI/Lab2.md)|
+|Manual Progression|[Link](./GettingStartedWithActiveDeploy/BluemixDashboard/Lab3.md)|[Link](./GettingStartedWithActiveDeploy/CLI/Lab3.md)|
+|Rollback Deployment|[Link](./GettingStartedWithActiveDeploy/BluemixDashboard/Lab4.md)|[Link](./GettingStartedWithActiveDeploy/CLI/Lab4.md)|
 
 **Coming Soon**
 * Pipeline Integration
