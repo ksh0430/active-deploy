@@ -1,6 +1,6 @@
 # Active Deploy Overview and Concepts
 
-##Introduction
+## Introduction
 
 Web giants like Facebook, Netflix, Google, and Amazon continually innovate and release new features and capabilities – and never with any planned downtime or outages.
 How do they do it?
@@ -12,9 +12,9 @@ If you're using the Bluemix Cloud Development platform, the answer is Active Dep
 
 The Active Deploy service provides fully controlled and customized application update deployments, with zero downtime, with your own Bluemix cloud delivery applications. This allows users to update container or cloud foundry applications on IBM Bluemix with zero downtime, by using intelligent update deployment capabilities. It allows full control over the deployment configuration and allows mid-stream acceptance testing.
 
-##Operational Overview
- 
-![Operational Overview](operational-overview-image1.png)
+## Operational Overview
+
+![Operational Overview](./images/operational-overview-image1.png)
 
 Operationally there are 4 essential stages
 

@@ -6,7 +6,7 @@
 
 **Intent:** If you need a sample application to work with, will show us how to clone a repository, push a sample application to Bluemix, and how to re-deploy our application as a new version once we've made changes to it.
 
-##Steps
+## Steps
 
 1. Use `git` to clone the repository hosting the sample application. Run the following command in your terminal/command prompt (or the Git command line on Windows):
 

@@ -12,7 +12,7 @@
 - Make sure you have satisfied the prerequisite steps listed on the main lab page
 - Make sure you have a running application in Bluemix. If need be, use the SampleApp steps on the main lab page.
 
-##Steps
+## Steps
 
 1. Use the `cf active-deploy-create` command to create a new deployment.
 It requires the names of the current (routed) version of the application and the new (unrouted) version.

@@ -15,7 +15,7 @@
 **Reference:**
 * You can see all the Dashboard screen references [here](https://github.com/IBM-Bluemix/active-deploy/tree/master/labs/ActiveDeployUsageLabs-Dashboard-Screens.md)
 
-##Steps
+## Steps
 
 1. Make a change to the `index.txt` file in the sample application.
   * Change the text "**Hello,** Bluemix World **4**" to "**TYPO in** Bluemix World **5**".

@@ -12,7 +12,7 @@
 - Make sure you have satisfied the prerequisite steps listed on the main lab page
 - Make sure you have a running application in Bluemix. If need be, use the SampleApp steps on the main lab page.
 
-##Steps
+## Steps
 
 1. Make a change to the `index.txt` file in the sample application.
   * Change the text "**Hello,** Bluemix World **4**" to "**TYPO in** Bluemix World **5**".

@@ -15,7 +15,7 @@
 **Reference:**
 * You can see all the Dashboard screen references [here](https://github.com/IBM-Bluemix/active-deploy/tree/master/labs/ActiveDeployUsageLabs-Dashboard-Screens.md)
 
-##Steps
+## Steps
 
 1. Go to the Bluemix Dashboard and click on the Active Deploy service tile. When the Active Deploy Dashboard loads, create a new deployment.
   * Click on the `Create New Deployment` button.

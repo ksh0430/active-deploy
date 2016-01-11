@@ -4,7 +4,7 @@
 
 **Intent:** A few steps to get started - done only once and depend on your desktop type. Skip any steps you have already accomplished.
 
-##Steps
+## Steps
 
 1. Create a Bluemix log in
     * [bluemix.net](http://bluemix.net) - sign up is free and immediate
