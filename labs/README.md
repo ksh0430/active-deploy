@@ -1,5 +1,3 @@
-[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/IBM-Bluemix/active-deploy-lab)
-
 # Active Deploy Scenario Labs
 
 These labs will walk you through a full set of usage scenarios for Active Deploy.

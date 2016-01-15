@@ -1,5 +1,3 @@
-[//]: # ([![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/IBM-Bluemix/active-deploy-lab))
-
 # Lab 1: Default Deployment with the CLI
 
 **Intent:** This lab will show us how to get started using Active Deploy quickly by doing an automated deployment using a default configuration.

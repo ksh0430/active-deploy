@@ -1,3 +1,5 @@
+[//]: # ([![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/IBM-Bluemix/active-deploy-lab))
+
 # Active Deploy
 
 You can update running apps with no downtime, by using the intelligent update capabilities of the Active Deploy service. You can also quickly revert to the original version.

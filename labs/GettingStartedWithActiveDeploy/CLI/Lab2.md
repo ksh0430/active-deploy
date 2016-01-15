@@ -1,5 +1,3 @@
-[//]: # ([![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/IBM-Bluemix/active-deploy-lab))
-
 # Lab 2: Custom Deployment
 
 **Intent:** This lab will show us the customizability of Active Deploy by customizing the phase durations when creating our deployments.

@@ -1,5 +1,3 @@
-[//]: # ([![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/IBM-Bluemix/active-deploy-lab))
-
 # Lab 4: Rollback a Deployment
 
 **Intent:** This lab explores how to roll back a deployment after you have determined there is an issue with the new version of your application.

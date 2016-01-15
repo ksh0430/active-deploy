@@ -1,5 +1,3 @@
-[//]: # ([![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/IBM-Bluemix/active-deploy-lab))
-
 [//]: # (Deal with containers here eventually)
 
 # Create an Application in Bluemix
