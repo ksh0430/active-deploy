@@ -24,11 +24,12 @@
 # Usage: This is no a finalized script - you will need to potentially modify 
 # it to suit your own purpose: change time outs, set variables, handle conditions.
 # Use it as a starting point and modify as you see fit.
-#
+# 
+# Look for #TODO for extending or handling things as you need
+# 
 # Questions: Please use the normal support channels
 #
 #********************************************************************************
-
 
 # This finds what the current execution directory is
 SCRIPTDIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
@@ -37,32 +38,38 @@ SCRIPTDIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 set -x # trace steps
 
 # Setup for Active Deploy phase times - you may or may not use these, although you probably should control how long you want it to run.
+#TODO: Decide on your timings, or pass them in as variables are you need from your master script.
 
-### Very fast deploy
+### Very fast deploy - keep in mind that the system moves quickly, but might not absolutely meet the 1m time - but it will be the minimal time handled by the system and your instance start-up times - but in other words its "as fast as possible"
 # rampup="1m"
-# test="1s"
+# test="1m"
 # rampdown="1m"
 # TIMEOUT_IN_MINUTES=6
 
-### Moderate speed deploy
+### Moderate speed deploy - takes 10 min to rampe up, 10 min of test, then a shorter 5 min ramp down - adjust as you need
 rampup="10m"
 test="10m"
 rampdown="5m"
 TIMEOUT_IN_MINUTES=40
 
+if [[ -z ${old_app_name} ]]; then echo "You must set the original application name"; exit 1; fi
+if [[ -z ${new_app_name} ]]; then echo "You must set the new application name"; exit 1; fi
+#TODO: Label is actually optional - but it helps to give it a label for listing and tracking
+if [[ -z ${label} ]]; then echo "You must set the label name"; exit 1; fi
 if [[ -z ${rampup} ]]; then echo "You must set rampup"; exit 1; fi
 if [[ -z ${test} ]]; then echo "You must set test"; exit 1; fi
 if [[ -z ${rampdown} ]]; then echo "You must set rampdown"; exit 1; fi
+#TODO: you can remove the timeout logic if you like and then delete this line
 if [[ -z ${TIMEOUT_IN_MINUTES} ]]; then echo "You must set TIMEOUT_IN_MINUTES"; exit 1; fi
 
 # Start the active deploy - record back the Active Deploy identification
-id=$(cf active-deploy-create $old_app_name $new_app_name -u $rampup -t $test -w $rampdown --quiet)
+# See the full usage for other values
+id=$(cf active-deploy-create $old_app_name $new_app_name -l $label -u $rampup -t $test -w $rampdown --quiet)
 
-# Get the status of deploy using id
+# Get the status of deploy using id - it also has a -t timeout value, and a -v verbose option
 status=$(cf active-deploy-check-status "$id" --quiet)
 
 #Status values are listed here => https://www.ng.bluemix.net/docs/services/ActiveDeploy/index.html - Basically they are:
-# Status - Description
 # in_progress - The deployment is running
 # paused - The deployment is paused
 # completed - The deployment is completed
@@ -72,41 +79,44 @@ status=$(cf active-deploy-check-status "$id" --quiet)
 
 # Loop while active deploy is in progress
 
-# You can use the the specific Active Deploy -check-phase subcommand or poll from the script to wait for specfic phase
-# This is a specific use-case probably
+#TODO: You can use the the specific Active Deploy -check-phase subcommand or poll from the script to wait for specfic phase - This is a specific use-case probably
 # cf active-deploy-check-phase "$id" --phase final --wait $(TIMEOUT_IN_MINUTES)m
 
-# $SECONDS is a Bash built-in from the start f script execution
+
+# $SECONDS is a Bash built-in from the start of script execution
 while [ $status = "in_progress" ] && [ $SECONDS -lt $(( TIMEOUT_IN_MINUTES*60 )) ]
 do
 	sleep 60
  	status=$(cf active-deploy-check-status "$id" --quiet)
 done
 
+# Filter on the status
 if [[ "${update_status}" == 'paused' ]]; then
   echo "Deployment is in paused"
-  # Do something here if you need to
+  #TODO: Do something here if you need to
 
 elif [[ "${update_status}" == 'completed' ]]; then
   echo "Deployment is in completed"
-  # Do something here if you need to - the deployment is completed at this point
+  #TODO: Do something here if you need to - the deployment is completed at this point
   
 elif [[ "${update_status}" == 'rolling_back' ]]; then
   echo "Deployment is in rolling_back"
-  # Do something here if you need to - the deployment is being rolled back
+  #TODO: Do something here if you need to - the deployment is being rolled back
   
 elif [[ "${update_status}" == 'rolled_back' ]]; then
   echo "Deployment is in rolled_back"
-  # Do something here if you need to - the deployment is now rolled back
+  #TODO: Do something here if you need to - the deployment is now rolled back
   
 elif [[ "${update_status}" == 'failed' ]]; then
   echo "Deployment failed"
-  # Do something here if you need to - the deployment as failed
+  #TODO: Do something here if you need to - the deployment as failed
   
 else
   echo "Deployment status is $update_status"
-  # This shouldn't be a status you see because it should be one of the above
+  #TODO: This shouldn't be a status you see because it should be one of the above
 
 fi
 
-# At this point use `cf delete` or `cf ic group rm` to remove the old v1 1 instance group.
+#TODO: At this point use `cf delete` or `cf ic group rm` to remove the old v1 1 instance group.
+
+#TODO: Any other wrap up or pass back values
