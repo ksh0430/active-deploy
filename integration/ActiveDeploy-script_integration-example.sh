@@ -16,7 +16,7 @@
 #********************************************************************************
 
 #********************************************************************************
-# Purpose: This script shows you how to call Active Deploy from an script. For 
+# Purpose: This script shows you how to call Active Deploy from a script. For 
 # example, you are doing build and deployment work and you want to call 
 # Active Deploy instead of the direct CF or Container commands you are using now.
 # Maybe you are using Jenkins and want to call out to Active Deploy.
@@ -36,30 +36,30 @@ SCRIPTDIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 # Sets up tracing
 set -x # trace steps
 
-# Log some helpful information for debugging
-env
-find . -print
-
-
 # Setup for Active Deploy phase times - you may or may not use these, although you probably should control how long you want it to run.
 
 ### Very fast deploy
 # rampup="1m"
 # test="1s"
 # rampdown="1m"
+# TIMEOUT_IN_MINUTES=6
 
 ### Moderate speed deploy
 # rampup="10m"
 # test="10m"
 # rampdown="5m"
+# TIMEOUT_IN_MINUTES=40
 
-
+if [[ -z ${rampup} ]]; then echo "You must set rampup"; exit 1; fi
+if [[ -z ${test} ]]; then echo "You must set test"; exit 1; fi
+if [[ -z ${rampdown} ]]; then echo "You must set rampdown"; exit 1; fi
+if [[ -z ${TIMEOUT_IN_MINUTES} ]]; then echo "You must set TIMEOUT_IN_MINUTES"; exit 1; fi
 
 # Start the active deploy - record back the Active Deploy identification
-id=$(cf active-deploy-create $old_app_name $new_app_name -u $rampup -t $test -w $rampdown | grep "deployment id:" | awk '{print $3}')
+id=$(cf active-deploy-create $old_app_name $new_app_name -u $rampup -t $test -w $rampdown --quiet)
 
 # Get the status of deploy using id
-status=$(cf active-deploy-check-status "$id" -q)
+status=$(cf active-deploy-check-status "$id" --quiet)
 
 #Status values are listed here => https://www.ng.bluemix.net/docs/services/ActiveDeploy/index.html - Basically they are:
 # Status - Description
@@ -73,17 +73,14 @@ status=$(cf active-deploy-check-status "$id" -q)
 # Loop while active deploy is in progress
 ### TODO: Also might want to put a counter on this and time out depending on your timing settings after it's clearly hung
 
-# ED: Can you please write a variable that indexes base on some setable timer? Like 50% longer than their entire phase timings?
-# so if your timings bring you to say 75 min - and say +15 min you should bail and declare failure
-# Like TIMEOUT = rampup+test+rampdown + 1.50
-# Then if that timeout is passed?
-# Or something like that
+# We can use the -check-phase subcommand or poll from the script to wait for completion
+# cf active-deploy-check-phase "$id" --phase final --wait $(TIMEOUT_IN_MINUTES)m
 
-
-while [ $status = "in_progress" ] && [ PAST TIMEOUT RANGE ]
+# $SECONDS is a Bash built-in from the start f script execution
+while [ $status = "in_progress" ] && [ $SECONDS -lt $(( TIMEOUT_IN_MINUTES*60 )) ]
 do
 	sleep 60
- 	status=$(cf active-deploy-check-status "$id" -q)
+ 	status=$(cf active-deploy-check-status "$id" --quiet)
 done
 
 if [[ "${update_status}" == 'paused' ]]; then
@@ -99,12 +96,11 @@ elif [[ "${update_status}" == 'rolled_back' ]]; then
   echo "Deployment is in rolled_back"
   
 elif [[ "${update_status}" == 'failed' ]]; then
-  echo "Deployment is in failed"
+  echo "Deployment failed"
   
 else
-  echo "Deployment is in 'no idea'"
+  echo "Deployment status is $update_status"
   
 fi
 
-#ED: What else should we mention to them here? Clean up? Deleting the noew v1 1 instance group?
-
+# At this point use `cf delete` or `cf ic group rm` to remove the old v1 1 instance group.
