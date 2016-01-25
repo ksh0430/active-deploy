@@ -16,10 +16,10 @@ These labs will walk you through a full set of usage scenarios for Active Deploy
 ### 1. Getting Started with Active Deploy
 | Lab Topic | Bluemix Dashboard | Command Line |
 |-----------|:-----------------:|:------------:|
-|Basic Deployment|[Link](./GettingStartedWithActiveDeploy/BluemixDashboard/Lab1.md)|[Link](./GettingStartedWithActiveDeploy/CLI/Lab1.md)|
-|Custom Deployment|[Link](./GettingStartedWithActiveDeploy/BluemixDashboard/Lab2.md)|[Link](./GettingStartedWithActiveDeploy/CLI/Lab2.md)|
-|Manual Progression|[Link](./GettingStartedWithActiveDeploy/BluemixDashboard/Lab3.md)|[Link](./GettingStartedWithActiveDeploy/CLI/Lab3.md)|
-|Rollback Deployment|[Link](./GettingStartedWithActiveDeploy/BluemixDashboard/Lab4.md)|[Link](./GettingStartedWithActiveDeploy/CLI/Lab4.md)|
+|Basic Deployment|[Link](./labs/BluemixDashboard/Lab1.md)|[Link](./labs/CLI/Lab1.md)|
+|Custom Deployment|[Link](./labs/BluemixDashboard/Lab2.md)|[Link](./labs/CLI/Lab2.md)|
+|Manual Progression|[Link](./labs/BluemixDashboard/Lab3.md)|[Link](./labs/CLI/Lab3.md)|
+|Rollback Deployment|[Link](./labs/BluemixDashboard/Lab4.md)|[Link](./labs/CLI/Lab4.md)|
 
 **Coming Soon**
 * Pipeline Integration
