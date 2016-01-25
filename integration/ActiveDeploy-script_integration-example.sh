@@ -45,10 +45,10 @@ set -x # trace steps
 # TIMEOUT_IN_MINUTES=6
 
 ### Moderate speed deploy
-# rampup="10m"
-# test="10m"
-# rampdown="5m"
-# TIMEOUT_IN_MINUTES=40
+rampup="10m"
+test="10m"
+rampdown="5m"
+TIMEOUT_IN_MINUTES=40
 
 if [[ -z ${rampup} ]]; then echo "You must set rampup"; exit 1; fi
 if [[ -z ${test} ]]; then echo "You must set test"; exit 1; fi
@@ -71,9 +71,9 @@ status=$(cf active-deploy-check-status "$id" --quiet)
 # failed - The deployment failed; and an error message is displayed
 
 # Loop while active deploy is in progress
-### TODO: Also might want to put a counter on this and time out depending on your timing settings after it's clearly hung
 
-# We can use the -check-phase subcommand or poll from the script to wait for completion
+# You can use the the specific Active Deploy -check-phase subcommand or poll from the script to wait for specfic phase
+# This is a specific use-case probably
 # cf active-deploy-check-phase "$id" --phase final --wait $(TIMEOUT_IN_MINUTES)m
 
 # $SECONDS is a Bash built-in from the start f script execution
@@ -85,22 +85,28 @@ done
 
 if [[ "${update_status}" == 'paused' ]]; then
   echo "Deployment is in paused"
+  # Do something here if you need to
 
 elif [[ "${update_status}" == 'completed' ]]; then
   echo "Deployment is in completed"
+  # Do something here if you need to - the deployment is completed at this point
   
 elif [[ "${update_status}" == 'rolling_back' ]]; then
   echo "Deployment is in rolling_back"
+  # Do something here if you need to - the deployment is being rolled back
   
 elif [[ "${update_status}" == 'rolled_back' ]]; then
   echo "Deployment is in rolled_back"
+  # Do something here if you need to - the deployment is now rolled back
   
 elif [[ "${update_status}" == 'failed' ]]; then
   echo "Deployment failed"
+  # Do something here if you need to - the deployment as failed
   
 else
   echo "Deployment status is $update_status"
-  
+  # This shouldn't be a status you see because it should be one of the above
+
 fi
 
 # At this point use `cf delete` or `cf ic group rm` to remove the old v1 1 instance group.
