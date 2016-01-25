@@ -7,6 +7,6 @@ The script ActiveDeploy-script_integration-example.sh in this shows you an examp
 
 Notes:
 - if you want to use the Bluemix Delivery Pipeline, we have a better solution here [pending]
-- This script is only partially "turn-key". It's fairly well complete and would definately work. But you need to make sure that it is the flavor of results that you want. Does it handle deployment failures the way you like? Doe sit notify you properly of certain statuses?
+- This script is only partially "turn-key". It's fairly well complete - but you need to make sure that it is the flavor of results that you want. Does it handle deployment results the way you like? Does it notify you properly of certain statuses?
 
 
