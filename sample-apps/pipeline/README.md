@@ -40,6 +40,7 @@ Here you will see a Build & Deploy pipeline - full info on this awesome DevOps c
       $ cf active-deploy-list | grep "in_progress"
       $ cf active-deploy-show active-deploy-ORGNAME-936_1-to-active-deploy-ORGNAME-936_2
     ```
+    
     Or you can look at the Active Deploy Console dashboard @ console.ng.bluemix.net => Services => Active Deploy.
 
 You're Done!
