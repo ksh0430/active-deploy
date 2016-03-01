@@ -9,10 +9,7 @@ Press this button, to get your own copy of the sample running in Bluemix! It clo
 ## Let's Get Started
 This simple pipeline demonstrates how active deploy capabilities can be used within Bluemix Delivery Pipeline services. Once you press the "Deploy to Bluemix" button and log in, you should see a set of steps run through:
 
-    Created project successfully
-    Cloned repository successfully
-    Configured pipeline successfully
-    Deployed to Bluemix successfully
+![screenshot](https://developer.ibm.com/bluemix/wp-content/uploads/sites/20/2015/03/deploy-done.png)
 
 Once completed, you should click on the "edit code" button and then "Build & Deploy" in the upper right hand corner.
 
