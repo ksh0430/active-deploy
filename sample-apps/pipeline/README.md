@@ -18,17 +18,19 @@ Once completed, you should click on the "edit code" button and then "Build & Dep
 
 Here you will see a Build & Deploy pipeline - full info on this awesome DevOps capability can be found [here](https://hub.jazz.net/docs/deploy/).
 
-  - **Build** stage
+  - Build stage
     - The first stage is the build stage - that is the standard build stage in Bluemix - however you create your application image in a pipeline is what would be done here. 
-  - **Deploy** stage
-    - The second stage is where the Active Deploy magic happens. The first time this project runs runs, Active Deploy won't run yet - but it will gave you a sample application running properly that you can now use to run Active Deploy to show you have the pipeline integration works. The Active Deploy pipeline stage information is fully described [here] (https://github.ibm.com/smguilia/shawna-staging/blob/master/extension.md)
+  - Deploy stage
+    - The second stage is where the Active Deploy magic happens. The first time this project runs runs, Active Deploy won't run yet - but it will gave you a sample application running properly that you can now use to run Active Deploy to show you have the pipeline integration works. The Active Deploy pipeline stage information is fully described [here] (https://github.ibm.com/smguilia/shawna-staging/blob/master/extension.md).
 
 1. The first time you run this:
   - Deploys the app as a Cloud Foundry application to Bluemix 
   - if you run from a command line (link to command line set up lab in our labs) ```cf apps``` you will see this application running:
+    
     ```
       active-deploy-ORGNAME-936_1   started           3/3         64M      1G     active-deploy-ORGNAME-936.mybluemix.net
     ```
+    
     or something similar - this is your initial sample application. Or you can look at the Bluemix console dashboard @ console.ng.bluemix.net to see your new application running.
 
 2. The second time you run it:
@@ -37,8 +39,7 @@ Here you will see a Build & Deploy pipeline - full info on this awesome DevOps c
       >cf active-deploy-list | grep "in_progress"
       >cf active-deploy-show active-deploy-ORGNAME-936_1-to-active-deploy-ORGNAME-936_2
     ```
-(adjusted for your results in command above)
-  Or you can look at the Active Deploy Console dashboard @ console.ng.bluemix.net => Services => Active Deploy.
+(adjusted for your results in command above). Or you can look at the Active Deploy Console dashboard @ console.ng.bluemix.net => Services => Active Deploy.
 
 You're Done
 
