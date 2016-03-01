@@ -28,18 +28,23 @@ Here you will see a Build & Deploy pipeline - full info on this awesome DevOps c
   - if you run from a command line (link to command line set up lab in our labs) ```cf apps``` you will see this application running:
     
     ```
-      active-deploy-ORGNAME-936_1   started           3/3         64M      1G     active-deploy-ORGNAME-936.mybluemix.net
+      $ cf apps
+      Getting apps in org ORGNAME / space dev as USERNAME...
+      OK
+
+      name                             requested state   instances   memory   disk   urls
+      active-deploy-ORGNAME-936_1      started           3/3         64M      1G     active-deploy-ORGNAME-936.mybluemix.net
     ```
     
     or something similar - this is your initial sample application. Or you can look at the Bluemix console dashboard @ console.ng.bluemix.net to see your new application running.
 
 2. The second time you run it:
-  If you execute the build stage again with the little arrow, it will re-execute the build, create a new image, and then re-run the Active Deploy Stage. This actually runs the Active Deploy this time through. You can see your deploy happening using these commands:
+  If you execute the build stage again with the little arrow, it will re-execute the build, create a new image, and then re-run the Active Deploy Stage. This actually runs the Active Deploy this time through. You can see your deploy happening using these commands (adjusted for your results in command above):
     ```
-      >cf active-deploy-list | grep "in_progress"
-      >cf active-deploy-show active-deploy-ORGNAME-936_1-to-active-deploy-ORGNAME-936_2
+      $ cf active-deploy-list | grep "in_progress"
+      $ cf active-deploy-show active-deploy-ORGNAME-936_1-to-active-deploy-ORGNAME-936_2
     ```
-(adjusted for your results in command above). Or you can look at the Active Deploy Console dashboard @ console.ng.bluemix.net => Services => Active Deploy.
+Or you can look at the Active Deploy Console dashboard @ console.ng.bluemix.net => Services => Active Deploy.
 
 You're Done
 
