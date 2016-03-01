@@ -20,7 +20,7 @@ Here you will see a Build & Deploy pipeline - full info on this awesome DevOps c
   - Deploy stage
     - The second stage is where the Active Deploy magic happens. The first time this project runs runs, Active Deploy won't run yet - but it will gave you a sample application running properly that you can now use to run Active Deploy to show you have the pipeline integration works. The Active Deploy pipeline stage information is fully described [here] (https://github.ibm.com/smguilia/shawna-staging/blob/master/extension.md).
 
-1. The first time you run this:
+1. The first time you run this pipeline:
   - Deploys the app as a Cloud Foundry application to Bluemix 
   - If you run ```cf apps``` from a command line (the labs to help get you acquainted with the command line can be found [here](../../labs/README.md)) you will see this application running:  
     ```
@@ -33,7 +33,7 @@ Here you will see a Build & Deploy pipeline - full info on this awesome DevOps c
     ```
     or something similar - this is your initial sample application. Or you can look at the Bluemix console dashboard @ console.ng.bluemix.net to see your new application running.
 
-2. The second time you run it:
+2. The second time you run the pipeline:
   - If you execute the build stage again with the little arrow, it will re-execute the build, create a new image, and then re-run the Active Deploy Stage. This actually runs the Active Deploy this time through. 
   - You can see your deploy happening using these commands (adjusted for your results in command above):
     ```
