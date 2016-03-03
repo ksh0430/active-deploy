@@ -2,6 +2,7 @@
 
 ## Try me 
 A simple Hello World Python application using Flask on Bluemix
+
 Press this button, to get your own copy of the sample running in Bluemix! It clones the project, creates DevOps Services Project, generates multi-stage pipeline, deploys application to IBM Bluemix.
 
 [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/Puquios/active-deploy.git)
@@ -11,14 +12,14 @@ This simple pipeline demonstrates how active deploy capabilities can be used wit
 
 ![screenshot](https://developer.ibm.com/bluemix/wp-content/uploads/sites/20/2015/03/deploy-done.png)
 
-Once completed, you should click on the "edit code" button and then "Build & Deploy" in the upper right hand corner.
+Once completed, you should click on the ***"EDIT CODE"*** button and then ***"BUILD & DEPLOY"*** in the upper right hand corner.
 
 Here you will see a Build & Deploy pipeline - full info on this awesome DevOps capability can be found [here](https://hub.jazz.net/docs/deploy/).
 
   - Build stage
     - The first stage is the build stage - that is the standard build stage in Bluemix - however you create your application image in a pipeline is what would be done here. 
   - Deploy stage
-    - The second stage is where the Active Deploy magic happens. The first time this project runs runs, Active Deploy won't run yet - but it will gave you a sample application running properly that you can now use to run Active Deploy to show you have the pipeline integration works. The Active Deploy pipeline stage information is fully described [here] (https://github.ibm.com/smguilia/shawna-staging/blob/master/extension.md).
+    - The second stage is where the Active Deploy magic happens. The first time this project runs runs, Active Deploy won't run yet - but it will gave you a sample application running properly that you can now use to run Active Deploy to show you have the pipeline integration works. The Active Deploy pipeline stage information is fully described [here] (https://hub.jazz.net/docs/deploy_ext/#activedeploy).
 
 1. The first time you run this pipeline:
   - Deploys the app as a Cloud Foundry application to Bluemix 
