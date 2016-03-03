@@ -23,7 +23,7 @@ Here you will see a Build & Deploy pipeline - full info on this awesome DevOps c
 
 1. The first time you run this pipeline:
   - Deploys the app as a Cloud Foundry application to Bluemix 
-  - If you run ```cf apps``` from a command line (the labs to help get you acquainted with the command line can be found [here](../../labs/README.md)) you will see this application running:  
+  - If you run ```cf apps``` from a command line (the labs to help get you acquainted with the command line can be found [here](https://github.com/IBM-Bluemix/active-deploy/blob/master/labs/README.md)) you will see this application running:  
     ```
       $ cf apps
       Getting apps in org ORGNAME / space dev as USERNAME...
