@@ -13,9 +13,9 @@ This simple pipeline demonstrates how active deploy capabilities can be used wit
 ![screenshot01](./images/01_login.PNG?raw=true)
 ![screenshot02](./images/02_deploy.PNG?raw=true)
 
-Once completed, you can see your app running by clicking **""**:
+Once completed, you can see your app running by clicking **"VIEW YOUR APP"**:
 
-![screenshot03](./images/03_deploy2BM.PNG?raw=true)
+![screenshot03](./images/03_deployed2BM.PNG?raw=true)
 ![screenshot04](./images/04_viewYourApp.PNG?raw=true)
 
 Also, you can click on the ***"EDIT CODE"*** button to access your own copy of the repository and ***"BUILD & DEPLOY"*** in the upper right hand corner to see and configure your pipeline:
