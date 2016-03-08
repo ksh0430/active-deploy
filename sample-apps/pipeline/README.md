@@ -10,18 +10,18 @@ Press this button, to get your own copy of the sample running in Bluemix! It clo
 ## Let's Get Started
 This simple pipeline demonstrates how active deploy capabilities can be used within Bluemix Delivery Pipeline services. Once you press the "Deploy to Bluemix" button and log in, you should see a set of steps run through:
 
-![screenshot01](./images/01_login.PNG)
-![screenshot02](./images/02_deploy.PNG)
+![screenshot01](./images/01_login.PNG?raw=true)
+![screenshot02](./images/02_deploy.PNG?raw=true)
 
 Once completed, you can see your app running by clicking **""**:
 
-![screenshot03](./images/03_deploy2BM.PNG)
-![screenshot04](./images/04_viewYourApp.PNG)
+![screenshot03](./images/03_deploy2BM.PNG?raw=true)
+![screenshot04](./images/04_viewYourApp.PNG?raw=true)
 
 Also, you can click on the ***"EDIT CODE"*** button to access your own copy of the repository and ***"BUILD & DEPLOY"*** in the upper right hand corner to see and configure your pipeline:
 
-![screenshot05](./images/05_editCode.PNG)
-![screenshot06](./images/06_buildAndDeploy.PNG)
+![screenshot05](./images/05_editCode.PNG?raw=true)
+![screenshot06](./images/06_buildAndDeploy.PNG?raw=true)
 
 Here you will see a Build & Deploy pipeline - full info on this awesome DevOps capability can be found [here](https://hub.jazz.net/docs/deploy/).
 
@@ -34,7 +34,7 @@ Here you will see a Build & Deploy pipeline - full info on this awesome DevOps c
   - Deploys the app as a Cloud Foundry application to Bluemix 
   - If you run ```cf apps``` from a command line (the labs to help get you acquainted with the command line can be found [here](https://github.com/IBM-Bluemix/active-deploy/blob/master/labs/README.md)) you will see this application running:  
   
-  ![screenshot07](./images/07_firstRun.PNG)
+  ![screenshot07](./images/07_firstRun.PNG?raw=true)
   
   or something similar - this is your initial sample application. Or you can look at the Bluemix console dashboard @ console.ng.bluemix.net to see your new application running.
 
@@ -42,16 +42,16 @@ Here you will see a Build & Deploy pipeline - full info on this awesome DevOps c
   - If you execute the build stage again with the little arrow, it will re-execute the build, create a new image, and then re-run the Active Deploy Stage. This actually runs the Active Deploy this time through. 
   - You can see your deploy happening using these commands (adjusted for your results in command above):
     
-  ![screenshot08](./images/08_secondRun.PNG)
+  ![screenshot08](./images/08_secondRun.PNG?raw=true)
     
   Or you can look at the Active Deploy Console dashboard @ console.ng.bluemix.net => Services => Active Deploy.
   
-  ![screenshot09](./images/09_uiRunning.PNG)
+  ![screenshot09](./images/09_uiRunning.PNG?raw=true)
 
 You're Done!
 
-![screenshot10](./images/10_completed.PNG)
-![screenshot11](./images/11_uiCompleted.PNG)
+![screenshot10](./images/10_completed.PNG?raw=true)
+![screenshot11](./images/11_uiCompleted.PNG?raw=true)
 
 That's it, you've now seen Active Deploy work in the Bluemix Build & Delivery Pipeline. The next step for you is to set it up in your own pipeline project.
     
