@@ -2,7 +2,7 @@
 
 #********************************************************************************
 # Copyright 2016 IBM
-#
+# 
 #   Licensed under the Apache License, Version 2.0 (the "License");
 #   you may not use this file except in compliance with the License.
 #   You may obtain a copy of the License at
@@ -16,12 +16,13 @@
 #********************************************************************************
 
 #********************************************************************************
-# Purpose: This script shows you how to call Active Deploy from a script. For 
-# example, you are doing build and deployment work and you want to call 
-# Active Deploy instead of the direct CF or Container commands you are using now.
-# Maybe you are using Jenkins and want to call out to Active Deploy.
+# Purpose: This script shows you how to call Active Deploy ib Bluemix from a script. 
+# For example, you are doing build and deployment work for your cloud application
+# and you want to call Active Deploy instead of the direct CF or Container Bluemix 
+# commands you are using now. Maybe you are using Jenkins and want to call out 
+# to Active Deploy.
 #
-# Usage: This is no a finalized script - you will need to potentially modify 
+# Usage: This is not a finalized script - you will need to potentially modify 
 # it to suit your own purpose: change time outs, set variables, handle conditions.
 # Use it as a starting point and modify as you see fit.
 # 
@@ -40,13 +41,15 @@ set -x # trace steps
 # Setup for Active Deploy phase times - you may or may not use these, although you probably should control how long you want it to run.
 #TODO: Decide on your timings, or pass them in as variables are you need from your master script.
 
-### Very fast deploy - keep in mind that the system moves quickly, but might not absolutely meet the 1m time - but it will be the minimal time handled by the system and your instance start-up times - but in other words its "as fast as possible"
+### Very fast deploy
+### keep in mind that the system moves quickly, but might not absolutely meet the very short times - but it will be the minimal time handled by the system and your instance start-up times - but in other words its "as fast as possible"
 # rampup="1m"
 # test="1m"
 # rampdown="1m"
 # TIMEOUT_IN_MINUTES=6
 
-### Moderate speed deploy - takes 10 min to rampe up, 10 min of test, then a shorter 5 min ramp down - adjust as you need
+### Moderate speed deploy
+### takes 10 min to ramp-up, 10 min of test, then a shorter 5 min ramp-down - adjust as you need
 rampup="10m"
 test="10m"
 rampdown="5m"
@@ -82,7 +85,6 @@ status=$(cf active-deploy-check-status "$id" --quiet)
 #TODO: You can use the the specific Active Deploy -check-phase subcommand or poll from the script to wait for specfic phase - This is a specific use-case probably
 # cf active-deploy-check-phase "$id" --phase final --wait $(TIMEOUT_IN_MINUTES)m
 
-
 # $SECONDS is a Bash built-in from the start of script execution
 while [ $status = "in_progress" ] && [ $SECONDS -lt $(( TIMEOUT_IN_MINUTES*60 )) ]
 do
@@ -101,7 +103,7 @@ elif [[ "${update_status}" == 'completed' ]]; then
   
 elif [[ "${update_status}" == 'rolling_back' ]]; then
   echo "Deployment is in rolling_back"
-  #TODO: Do something here if you need to - the deployment is being rolled back
+  #TODO: Do something here if you need to - the deployment is in the process of being rolled back
   
 elif [[ "${update_status}" == 'rolled_back' ]]; then
   echo "Deployment is in rolled_back"
@@ -117,6 +119,6 @@ else
 
 fi
 
-#TODO: At this point use `cf delete` or `cf ic group rm` to remove the old v1 1 instance group.
+#TODO: At this point use `cf delete` or `cf ic group rm` to remove the old v1 instance group.
 
 #TODO: Any other wrap up or pass back values
