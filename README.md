@@ -12,7 +12,7 @@ If your goal is to update apps with no downtime, you can do that with a managed 
 ## Active Deploy Labs
 We have created several labs to help get you acquainted with the Active Deploy service.
 
-The main lab page can be found [here](./labs/README.md).
+The main lab page can be found [here](./labs/README.md)
 
 ## Blog Posts about Active Deploy
 * [Bluemix Active Deploy – Zero-Downtime Deployment](https://developer.ibm.com/bluemix/2015/10/09/bluemix-zero-downtime-deployment)
