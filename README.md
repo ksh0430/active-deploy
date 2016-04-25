@@ -17,3 +17,4 @@ The main lab page can be found [here](./labs/README.md)
 ## Blog Posts about Active Deploy
 * [Bluemix Active Deploy – Zero-Downtime Deployment](https://developer.ibm.com/bluemix/2015/10/09/bluemix-zero-downtime-deployment)
 * [Diving into the Bluemix Active Deploy service](https://developer.ibm.com/bluemix/2015/10/19/getting-started-with-bluemix-active-deploy/)
+
