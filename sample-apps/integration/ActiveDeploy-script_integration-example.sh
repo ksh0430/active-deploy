@@ -16,7 +16,7 @@
 #********************************************************************************
 
 #********************************************************************************
-# Purpose: This script shows you how to call Active Deploy ib Bluemix from a script. 
+# Purpose: This script shows you how to call Active Deploy in Bluemix from a script. 
 # For example, you are doing build and deployment work for your cloud application
 # and you want to call Active Deploy instead of the direct CF or Container Bluemix 
 # commands you are using now. Maybe you are using Jenkins and want to call out 
